@@ -1,13 +1,14 @@
 # Hi there, I'm Siti Norufakiah 👋
 
-## 🎓 Computer Science Student @ UiTM
+## 🎓 Diploma Computer Science Student @ UiTM
 - 💻 Passionate about coding and database integration
 - 🌱 Currently exploring JavaScript, SQL, and Visual Basic
 - 📚 Interested in cybersecurity topics like ransomware
 - 🤝 Enjoy collaborating on group projects and academic reports
 
 ## 🛠 Skills
-- Java, SQL, Visual Basic
+- Java, SQL, Visual Basic, JavaScript
+- Html, Css
 - Database design & integration
 - Academic writing & technical analysis
 - Poster design & impactful captions
