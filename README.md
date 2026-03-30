@@ -1,16 +1,19 @@
-## Hi there 👋
+# Hi there, I'm Siti Norufakiah 👋
 
-<!--
-**fakiah03/fakiah03** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## 🎓 Computer Science Student @ UiTM
+- 💻 Passionate about coding and database integration
+- 🌱 Currently exploring JavaScript, SQL, and Visual Basic
+- 📚 Interested in cybersecurity topics like ransomware
+- 🤝 Enjoy collaborating on group projects and academic reports
 
-Here are some ideas to get you started:
+## 🛠 Skills
+- Java, SQL, Visual Basic
+- Database design & integration
+- Academic writing & technical analysis
+- Poster design & impactful captions
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 📫 Connect with me
+[LinkedIn] (www.linkedin.com/in/siti-norufakiah-a-2b0b46335) | [Email](fakiahadnan@gmail.com)
+
+## ⚡ Fun Fact
+I love turning technical concepts into clear diagrams and analogies to help others understand better!
