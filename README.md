@@ -2,7 +2,7 @@
 
 ## 🎓 Diploma Computer Science Student @ UiTM
 - 💻 Passionate about coding and database integration
-- 🌱 Currently exploring JavaScript, SQL, and Visual Basic
+- 🌱 Currently exploring JavaScript, SQL, and php
 - 📚 Interested in cybersecurity topics like ransomware
 - 🤝 Enjoy collaborating on group projects and academic reports
 
