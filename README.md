@@ -14,7 +14,7 @@
 - Poster design & impactful captions
 
 ## 📫 Connect with me
-[LinkedIn] (www.linkedin.com/in/siti-norufakiah-a-2b0b46335) | [Email](fakiahadnan@gmail.com)
+[LinkedIn] (linkedin.com/in/siti-norufakiah) | [Email](fakiahadnan@gmail.com)
 
 ## ⚡ Fun Fact
 I love turning technical concepts into clear diagrams and analogies to help others understand better!
