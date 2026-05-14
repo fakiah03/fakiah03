@@ -10,11 +10,10 @@
 - Java, SQL, Visual Basic, JavaScript
 - Html, Css
 - Database design & integration
-- Academic writing & technical analysis
 - Poster design & impactful captions
 
 ## 📫 Connect with me
-[LinkedIn] (linkedin.com/in/siti-norufakiah) | [Email](fakiahadnan@gmail.com)
+[LinkedIn] (www.linkedin.com/in/siti-norufakiah-a-2b0b46335) | [Email](fakiahadnan@gmail.com)
 
 ## ⚡ Fun Fact
 I love turning technical concepts into clear diagrams and analogies to help others understand better!
