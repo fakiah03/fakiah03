@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 180" width="100%" height="100%">
+  <defs>
+    <linearGradient id="footerBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#29243A" />
+      <stop offset="50%" stop-color="#4A3570" />
+      <stop offset="100%" stop-color="#7C3AED" />
+    </linearGradient>
+    <linearGradient id="waveGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A78BFA" stop-opacity="0.3" />
+      <stop offset="50%" stop-color="#C8B6F0" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#FFF0F6" stop-opacity="0.25" />
+    </linearGradient>
+    <style>
+      @keyframes floatFooter {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-4px); }
+      }
+      @keyframes starTwinkle {
+        0%, 100% { opacity: 0.3; }
+        50% { opacity: 1; }
+      }
+      .float-f { animation: floatFooter 4.5s ease-in-out infinite; }
+      .twinkle-1 { animation: starTwinkle 3s ease-in-out infinite; }
+      .twinkle-2 { animation: starTwinkle 3.8s ease-in-out 1.2s infinite; }
+      .footer-main { font-family: 'Segoe UI', 'Poppins', sans-serif; font-weight: 600; fill: #FFFFFF; font-size: 18px; }
+      .footer-sub { font-family: 'Fira Code', monospace; fill: #EDE4FF; font-size: 13.5px; }
+      .footer-mini { font-family: 'Segoe UI', sans-serif; fill: #C8B6F0; font-size: 12px; }
+    </style>
+  </defs>
+
+  <rect width="1000" height="180" rx="20" fill="url(#footerBg)" />
+
+  <!-- Soft Layered Waves -->
+  <path d="M0 125 Q250 90 500 125 T1000 115 L1000 180 L0 180 Z" fill="url(#waveGrad1)" />
+  <path d="M0 145 Q250 170 500 140 T1000 150 L1000 180 L0 180 Z" fill="#EDE4FF" opacity="0.12" />
+
+  <!-- Decorative Stars -->
+  <g fill="#FFF0F6">
+    <path class="twinkle-1" d="M120 45 L122 51 L128 53 L122 55 L120 61 L118 55 L112 53 L118 51 Z" />
+    <path class="twinkle-2" d="M880 40 L882 46 L888 48 L882 50 L880 56 L878 50 L872 48 L878 46 Z" />
+    <circle class="twinkle-2" cx="220" cy="35" r="2.5" fill="#C8B6F0" />
+    <circle class="twinkle-1" cx="780" cy="60" r="2.5" fill="#EDE4FF" />
+    <circle class="twinkle-1" cx="165" cy="95" r="2" fill="#FFF0F6" />
+    <circle class="twinkle-2" cx="840" cy="95" r="2" fill="#C8B6F0" />
+  </g>
+
+  <!-- Center Text & Mascot Badge -->
+  <g class="float-f">
+    <text x="500" y="54" text-anchor="middle" class="footer-mini">୨୧ ────── ✦ ₊˚⊹♡⊹˚₊ ✦ ────── ୨୧</text>
+    <text x="500" y="88" text-anchor="middle" class="footer-main">Thanks for stopping by my little coding space! ♡</text>
+    <text x="500" y="118" text-anchor="middle" class="footer-sub">Keep creating, keep learning and keep growing. ✧</text>
+    <text x="500" y="154" text-anchor="middle" class="footer-mini" fill="#FFF0F6" opacity="0.9">crafted with lavender dreams &amp; gentle commits by @fakiah03 🌷</text>
+  </g>
+</svg>

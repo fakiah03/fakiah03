@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#29243A" />
+      <stop offset="45%" stop-color="#4A3570" />
+      <stop offset="100%" stop-color="#7C3AED" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EDE4FF" stop-opacity="0.14" />
+      <stop offset="100%" stop-color="#FFF0F6" stop-opacity="0.07" />
+    </linearGradient>
+    <linearGradient id="accentPink" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EDE4FF" />
+      <stop offset="50%" stop-color="#FFF0F6" />
+      <stop offset="100%" stop-color="#C8B6F0" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <style>
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-7px); }
+      }
+      @keyframes twinkle {
+        0%, 100% { opacity: 0.25; transform: scale(0.85); }
+        50% { opacity: 1; transform: scale(1.15); }
+      }
+      @keyframes pulseHeart {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.18); }
+      }
+      .float-1 { animation: floatSlow 5s ease-in-out infinite; }
+      .float-2 { animation: floatSlow 6.5s ease-in-out 1.2s infinite; }
+      .star-1 { animation: twinkle 3.2s ease-in-out infinite; transform-origin: center; transform-box: fill-box; }
+      .star-2 { animation: twinkle 4.1s ease-in-out 1.4s infinite; transform-origin: center; transform-box: fill-box; }
+      .star-3 { animation: twinkle 2.7s ease-in-out 0.7s infinite; transform-origin: center; transform-box: fill-box; }
+      .title-text { font-family: 'Segoe UI', 'Poppins', 'Quicksand', sans-serif; font-weight: 700; fill: #FFFFFF; }
+      .sub-text { font-family: 'Fira Code', 'Courier New', monospace; font-weight: 500; fill: #EDE4FF; }
+      .pill-text { font-family: 'Segoe UI', sans-serif; font-weight: 600; fill: #29243A; font-size: 13px; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="300" rx="22" fill="url(#bgGrad)" />
+
+  <!-- Soft Pastel Orbs -->
+  <circle cx="130" cy="60" r="110" fill="#A78BFA" opacity="0.15" />
+  <circle cx="880" cy="240" r="140" fill="#FFF0F6" opacity="0.12" />
+  <circle cx="760" cy="50" r="70" fill="#C8B6F0" opacity="0.15" />
+
+  <!-- Decorative Clouds -->
+  <g class="float-1" opacity="0.22" fill="#EDE4FF">
+    <path d="M75 235 a22 22 0 0 1 20 -20 a28 28 0 0 1 52 -6 a20 20 0 0 1 24 20 a16 16 0 0 1 -12 18 H82 a14 14 0 0 1 -7 -12 z" />
+    <path d="M820 85 a18 18 0 0 1 18 -16 a24 24 0 0 1 44 -5 a18 18 0 0 1 20 17 a14 14 0 0 1 -10 15 H828 a12 12 0 0 1 -8 -11 z" />
+  </g>
+
+  <!-- Crescent Moon -->
+  <g class="float-2" transform="translate(85, 48)">
+    <path d="M35 10 A28 28 0 1 0 60 52 A22 22 0 1 1 35 10 Z" fill="#FFF0F6" opacity="0.9" filter="url(#softGlow)" />
+  </g>
+
+  <!-- Sparkle Stars -->
+  <g fill="#FFF0F6">
+    <path class="star-1" d="M180 55 L183 64 L192 67 L183 70 L180 79 L177 70 L168 67 L177 64 Z" />
+    <path class="star-2" d="M780 40 L782 47 L789 49 L782 51 L780 58 L778 51 L771 49 L778 47 Z" />
+    <path class="star-3" d="M915 140 L918 148 L926 151 L918 154 L915 162 L912 154 L904 151 L912 148 Z" />
+    <path class="star-1" d="M230 220 L232 226 L238 228 L232 230 L230 236 L228 230 L222 228 L228 226 Z" />
+    <circle class="star-2" cx="290" cy="48" r="2.5" fill="#EDE4FF" />
+    <circle class="star-3" cx="690" cy="250" r="3" fill="#C8B6F0" />
+    <circle class="star-1" cx="640" cy="42" r="2" fill="#FFF0F6" />
+  </g>
+
+  <!-- Frosted Glass Inner Card -->
+  <rect x="55" y="34" width="890" height="232" rx="18" fill="url(#cardGrad)" stroke="#C8B6F0" stroke-opacity="0.35" stroke-width="1.5" />
+
+  <!-- Top Diary Window Bar -->
+  <circle cx="85" cy="58" r="5.5" fill="#FFF0F6" opacity="0.85" />
+  <circle cx="103" cy="58" r="5.5" fill="#C8B6F0" opacity="0.85" />
+  <circle cx="121" cy="58" r="5.5" fill="#A78BFA" opacity="0.85" />
+  <text x="142" y="62" class="sub-text" font-size="12" opacity="0.8">₊˚⊹♡ fakiah's lavender coding diary ♡⊹˚₊</text>
+
+  <!-- Cute Pixel / Vector Coding Mascot (Right Side) -->
+  <g class="float-1" transform="translate(715, 72)">
+    <!-- Soft Halo Behind Mascot -->
+    <circle cx="85" cy="82" r="68" fill="#EDE4FF" opacity="0.14" />
+    <circle cx="85" cy="82" r="54" fill="#C8B6F0" opacity="0.18" />
+
+    <!-- Cute Lavender Bunny/Cat Ears -->
+    <path d="M52 55 L44 22 Q56 20 66 44 Z" fill="#EDE4FF" stroke="#7C3AED" stroke-width="2.5" stroke-linejoin="round" />
+    <path d="M50 47 L47 29 Q54 29 60 43 Z" fill="#FFF0F6" />
+    <path d="M118 55 L126 22 Q114 20 104 44 Z" fill="#EDE4FF" stroke="#7C3AED" stroke-width="2.5" stroke-linejoin="round" />
+    <path d="M120 47 L123 29 Q116 29 110 43 Z" fill="#FFF0F6" />
+
+    <!-- Headphone Band -->
+    <path d="M40 72 A45 45 0 0 1 130 72" fill="none" stroke="#A78BFA" stroke-width="5" stroke-linecap="round" />
+
+    <!-- Cat Head & Body -->
+    <ellipse cx="85" cy="78" rx="42" ry="35" fill="#EDE4FF" stroke="#7C3AED" stroke-width="2.5" />
+
+    <!-- Headphone Cups -->
+    <rect x="35" y="64" width="11" height="24" rx="5.5" fill="#7C3AED" stroke="#FFF0F6" stroke-width="1.5" />
+    <rect x="124" y="64" width="11" height="24" rx="5.5" fill="#7C3AED" stroke="#FFF0F6" stroke-width="1.5" />
+
+    <!-- Cute Ribbon Bow on Ear -->
+    <path d="M108 38 C100 32, 100 46, 108 41 C116 46, 116 32, 108 38 Z" fill="#FFF0F6" stroke="#7C3AED" stroke-width="1.5" />
+    <circle cx="108" cy="39.5" r="2.2" fill="#7C3AED" />
+
+    <!-- Eyes & Rosy Cheeks -->
+    <circle cx="69" cy="77" r="3.8" fill="#29243A" />
+    <circle cx="67.8" cy="75.8" r="1.3" fill="#FFFFFF" />
+    <circle cx="101" cy="77" r="3.8" fill="#29243A" />
+    <circle cx="99.8" cy="75.8" r="1.3" fill="#FFFFFF" />
+    <ellipse cx="60" cy="84" rx="5.5" ry="3" fill="#FFB8D1" opacity="0.7" />
+    <ellipse cx="110" cy="84" rx="5.5" ry="3" fill="#FFB8D1" opacity="0.7" />
+
+    <!-- Cute Mouth -->
+    <path d="M80 83 Q82.5 86 85 83 Q87.5 86 90 83" fill="none" stroke="#29243A" stroke-width="2" stroke-linecap="round" />
+
+    <!-- Pastel Laptop in Front -->
+    <rect x="48" y="102" width="74" height="44" rx="7" fill="#C8B6F0" stroke="#7C3AED" stroke-width="2.5" />
+    <rect x="53" y="107" width="64" height="34" rx="4" fill="#29243A" />
+    <!-- Glowing Heart & Code on Laptop Lid -->
+    <text x="85" y="129" text-anchor="middle" fill="#FFF0F6" font-family="monospace" font-size="14" font-weight="bold">&lt;♡/&gt;</text>
+    <rect x="38" y="145" width="94" height="7" rx="3.5" fill="#EDE4FF" stroke="#7C3AED" stroke-width="2" />
+  </g>
+
+  <!-- Main Text Content (Left Side) -->
+  <g transform="translate(85, 112)">
+    <!-- Pill Greeting -->
+    <rect x="0" y="-22" width="248" height="26" rx="13" fill="url(#accentPink)" />
+    <text x="124" y="-5" text-anchor="middle" class="pill-text">✦ Welcome to my little corner of GitHub ✦</text>
+
+    <!-- Name / Handle -->
+    <text x="0" y="38" class="title-text" font-size="36" letter-spacing="0.5">Siti Norufakiah <tspan fill="#C8B6F0" font-size="24" font-weight="400">(@fakiah03)</tspan></text>
+
+    <!-- Tagline -->
+    <text x="0" y="72" class="sub-text" font-size="18" fill="#FFF0F6">
+      “building little things with big dreams ♡”
+    </text>
+
+    <!-- Sub-tagline / Roles -->
+    <text x="0" y="104" class="sub-text" font-size="13.5" fill="#C8B6F0" opacity="0.92">
+      ୨୧ Aspiring Software Developer  •  Web &amp; Database Enthusiast  •  Automation Explorer ୨୧
+    </text>
+  </g>
+</svg>

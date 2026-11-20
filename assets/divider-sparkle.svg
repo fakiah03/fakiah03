@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 36" width="100%" height="36">
+  <defs>
+    <linearGradient id="lineGradLeft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EDE4FF" stop-opacity="0" />
+      <stop offset="50%" stop-color="#C8B6F0" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="lineGradRight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="1" />
+      <stop offset="50%" stop-color="#C8B6F0" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#EDE4FF" stop-opacity="0" />
+    </linearGradient>
+    <style>
+      @keyframes shimmer {
+        0%, 100% { opacity: 0.45; transform: scale(0.9); }
+        50% { opacity: 1; transform: scale(1.12); }
+      }
+      .gem-1 { animation: shimmer 2.8s ease-in-out infinite; transform-origin: center; transform-box: fill-box; }
+      .gem-2 { animation: shimmer 2.8s ease-in-out 0.9s infinite; transform-origin: center; transform-box: fill-box; }
+      .gem-3 { animation: shimmer 2.8s ease-in-out 1.8s infinite; transform-origin: center; transform-box: fill-box; }
+    </style>
+  </defs>
+
+  <!-- Left & Right Gradient Lines -->
+  <rect x="40" y="17" width="290" height="2" rx="1" fill="url(#lineGradLeft)" />
+  <rect x="470" y="17" width="290" height="2" rx="1" fill="url(#lineGradRight)" />
+
+  <!-- Center Bow & Sparkles -->
+  <g transform="translate(400, 18)">
+    <!-- Center Heart / Bow Motif -->
+    <path class="gem-2" d="M0 -8 L3 -2 L9 0 L3 2 L0 8 L-3 2 L-9 0 L-3 -2 Z" fill="#7C3AED" />
+    <circle cx="-24" cy="0" r="3" fill="#A78BFA" class="gem-1" />
+    <circle cx="24" cy="0" r="3" fill="#A78BFA" class="gem-3" />
+    <path class="gem-1" d="M-46 -5 L-44 -1 L-40 0 L-44 1 L-46 5 L-48 1 L-52 0 L-48 -1 Z" fill="#C8B6F0" />
+    <path class="gem-3" d="M46 -5 L48 -1 L52 0 L48 1 L46 5 L44 1 L40 0 L44 -1 Z" fill="#C8B6F0" />
+  </g>
+</svg>

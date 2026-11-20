@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 135" width="100%" height="135">
+  <defs>
+    <linearGradient id="quoteBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#29243A" />
+      <stop offset="60%" stop-color="#3F2E5E" />
+      <stop offset="100%" stop-color="#5B3A8E" />
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C8B6F0" />
+      <stop offset="50%" stop-color="#FFF0F6" />
+      <stop offset="100%" stop-color="#A78BFA" />
+    </linearGradient>
+    <style>
+      @keyframes pulseStar {
+        0%, 100% { opacity: 0.35; transform: scale(0.9); }
+        50% { opacity: 1; transform: scale(1.15); }
+      }
+      .s1 { animation: pulseStar 3s ease-in-out infinite; transform-origin: center; transform-box: fill-box; }
+      .s2 { animation: pulseStar 3.6s ease-in-out 1.2s infinite; transform-origin: center; transform-box: fill-box; }
+      .q-text { font-family: 'Segoe UI', 'Poppins', sans-serif; font-weight: 600; font-style: italic; fill: #FFFFFF; font-size: 18.5px; }
+      .q-sub { font-family: 'Fira Code', monospace; fill: #EDE4FF; font-size: 12.5px; }
+    </style>
+  </defs>
+
+  <rect x="3" y="3" width="854" height="129" rx="18" fill="url(#quoteBg)" stroke="url(#borderGrad)" stroke-width="2" />
+
+  <!-- Subtle Glow Circles -->
+  <circle cx="80" cy="67" r="55" fill="#A78BFA" opacity="0.12" />
+  <circle cx="780" cy="67" r="55" fill="#FFF0F6" opacity="0.1" />
+
+  <!-- Decorative Sparkles -->
+  <path class="s1" d="M65 38 L67 44 L73 46 L67 48 L65 54 L63 48 L57 46 L63 44 Z" fill="#FFF0F6" />
+  <path class="s2" d="M795 78 L797 84 L803 86 L797 88 L795 94 L793 88 L787 86 L793 84 Z" fill="#C8B6F0" />
+  <circle class="s2" cx="105" cy="95" r="2.5" fill="#C8B6F0" />
+  <circle class="s1" cx="755" cy="40" r="2.5" fill="#FFF0F6" />
+
+  <!-- Quote Content -->
+  <text x="430" y="36" text-anchor="middle" class="q-sub" fill="#C8B6F0">✦ . 　⁺ 　 . ✦ 　lavender diary note 　✦ . 　⁺ 　 . ✦</text>
+  <text x="430" y="74" text-anchor="middle" class="q-text">“Every little commit is a step closer to the developer I want to become. ♡”</text>
+  <text x="430" y="106" text-anchor="middle" class="q-sub" fill="#FFF0F6">— fakiah's coding motto ୨୧</text>
+</svg>
